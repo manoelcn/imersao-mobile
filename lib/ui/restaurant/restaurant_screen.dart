@@ -18,7 +18,7 @@ class RestaurantScreen extends StatelessWidget {
           spacing: 12.0,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('assets/${restaurant.imagePath}', width: 128.0),
+            Image.asset('assets/${restaurant.imagePath}', width: 128),
             Text(
               "Mais pedidos",
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
@@ -27,14 +27,15 @@ class RestaurantScreen extends StatelessWidget {
               children: List.generate(restaurant.dishes.length, (index) {
                 Dish dish = restaurant.dishes[index];
                 return ListTile(
+                  onTap: () {},
                   leading: Image.asset(
                     'assets/dishes/default.png',
-                    width: 48.0,
-                    height: 48.0,
+                    width: 48,
+                    height: 48,
                   ),
                   title: Text(dish.name),
                   subtitle: Text("R\$${dish.price.toStringAsFixed(2)}"),
-                  trailing: IconButton.filled(
+                  trailing: IconButton(
                     onPressed: () {
                       context.read<BagProvider>().addAllDishes([dish]);
                     },

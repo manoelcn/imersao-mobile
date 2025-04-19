@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/data/restaurant_data.dart';
-import 'package:myapp/ui/_core/app_colors.dart';
 import 'package:myapp/ui/_core/app_theme.dart';
 import 'package:myapp/ui/_core/bag_provider.dart';
 import 'package:myapp/ui/splash/splash_screen.dart';

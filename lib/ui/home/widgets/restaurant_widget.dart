@@ -22,7 +22,7 @@ class RestaurantWidget extends StatelessWidget {
       child: Row(
         spacing: 12.0,
         children: [
-          Image.asset('assets/${restaurant.imagePath}', width: 72.0),
+          Image.asset('assets/${restaurant.imagePath}', width: 72),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -31,8 +31,8 @@ class RestaurantWidget extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
               ),
               Row(
-                children: List.generate(restaurant.starts.toInt(), (index) {
-                  return Image.asset('assets/others/star.png', width: 16.0);
+                children: List.generate(restaurant.stars.toInt(), (index) {
+                  return Image.asset('assets/others/star.png', width: 16);
                 }),
               ),
               Text('${restaurant.distance}km'),

@@ -8,8 +8,8 @@ class CategoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100.0,
-      height: 100.0,
+      width: 100,
+      height: 100,
       decoration: BoxDecoration(
         color: AppColors.lightBackgroundColor,
         borderRadius: BorderRadius.circular(12.0),
@@ -21,8 +21,8 @@ class CategoryWidget extends StatelessWidget {
         spacing: 8.0,
         children: [
           Image.asset(
-            'assets/categories/${category.toLowerCase()}.png',
-            height: 48.0,
+            "assets/categories/${category.toLowerCase()}.png",
+            height: 48,
           ),
           Text(
             category,

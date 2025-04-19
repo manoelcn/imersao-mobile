@@ -38,8 +38,8 @@ class CheckoutScreen extends StatelessWidget {
                     return ListTile(
                       leading: Image.asset(
                         'assets/dishes/default.png',
-                        width: 48.0,
-                        height: 48.0,
+                        width: 48,
+                        height: 48,
                       ),
                       title: Text(dish.name),
                       subtitle: Text("R\$${dish.price.toStringAsFixed(2)}"),

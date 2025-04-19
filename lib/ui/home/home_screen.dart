@@ -24,9 +24,9 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Center(child: Image.asset('assets/logo.png', width: 147)),
-              Text('Boas-vindas!'),
+              Text("Boas-vindas!"),
               TextFormField(),
-              Text('Escolha por categoria'),
+              Text("Escolha por categoria"),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
@@ -41,8 +41,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Image.asset('assets/banners/banner_promo.png'),
-              Text('Bem avaliados'),
+              Image.asset("assets/banners/banner_promo.png"),
+              Text("Bem avaliados"),
               Column(
                 spacing: 16.0,
                 children: List.generate(restaurantData.listRestaurant.length, (
